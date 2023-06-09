@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <title>Ceasar`s Cipher</title>
 </head>
+
 <body>
-    
+    <div class="container-fluid">
+        <h1>Ceasar`s Cipher</h1>
+        <p style="text-align: left;">Caesar's cipher, also known as the Caesar shift or Caesar's code, is a simple
+            substitution cipher used for encryption. It is named after Julius Caesar, who is believed to have used this
+            method to communicate secretly with his military commanders.</p>
+        <p style="text-align: left;">The encryption process in Caesar's cipher involves shifting each letter of the
+            plaintext a certain number of positions down the alphabet. The shifting value, often referred to as the key
+            or the shift, determines how many positions each letter is moved. For example, with a shift of 3, the letter
+            'A' would be replaced by 'D', 'B' by 'E', and so on.</p>
+        <p style="text-align: left;">Here's a step-by-step explanation of the encryption process using Caesar's cipher:
+        </p>
+        <ol style="text-align: left;">
+            <li>
+                <p>Choose a shift value (key) to determine how many positions each letter should be shifted. For
+                    example, a shift of 3 means 'A' becomes 'D', 'B' becomes 'E', and so on.</p>
+            </li>
+            <li>
+                <p>Take the plaintext message that you want to encrypt.</p>
+            </li>
+            <li>
+                <p>Iterate through each letter of the plaintext message.</p>
+            </li>
+            <li>
+                <p>For each letter, shift it by the specified number of positions. Wrap around to the beginning of the
+                    alphabet if necessary. Maintain the case of the letters (uppercase remains uppercase, and lowercase
+                    remains lowercase).</p>
+            </li>
+            <li>
+                <p>Replace the original letter with the shifted letter to create the ciphertext.</p>
+            </li>
+            <li>
+                <p>Continue this process for each letter in the plaintext, until the entire message has been encrypted.
+                </p>
+            </li>
+        </ol>
+        <p style="text-align: left;">The resulting ciphertext is the encrypted form of the original plaintext. To
+            decrypt the message, the receiver needs to know the shift value and can reverse the process by shifting each
+            letter back by the same number of positions.</p>
+        <p style="text-align: left;">While Caesar's cipher was effective in ancient times, it is now considered
+            extremely weak and can be easily decrypted through simple frequency analysis or by trying all possible shift
+            values. Therefore, it is mainly used for educational purposes or as a basic building block for more complex
+            encryption algorithms.</p>
+        <h2>Put your message to diplay it in ceasars cipher</h2>
+        <input name="searchTxt" type="text" maxlength="512" id="searchTxt" class="searchField" />
+        <h4 id="decoded">DEMO</h4>
+    </div>
 </body>
+
 </html>
